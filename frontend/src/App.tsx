@@ -16,7 +16,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post('http://localhost:5000/api/hello', { text: input })
+    axios.post('http://localhost:5000/api/complete', { text: input })
       .then((res) => {
         setResponse(res.data);
         setInput(''); // Clear input after successful submission
